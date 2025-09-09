@@ -63,13 +63,9 @@ jobs:
     steps:
       - name: Checkout Projects
         uses: actions/checkout@main
-        
-      - name: Setup tmate session
-        uses: mxschmitt/action-tmate@v3
-        with:
-          # 可选配置
-          limit-access-to-actor: true  # 仅允许触发工作流的用户访问
-          # ssh-pub-keys: "你的SSH公钥"  # 可选，预先添加信任的SSH公钥
+
+      - name: Setup Debug Session
+        uses: csexton/debugger-action@master
           
       - name: Initialization Environment
         env:
