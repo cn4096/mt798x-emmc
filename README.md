@@ -24,3 +24,10 @@ workflows——自定义CI配置
 Scripts——自定义脚本
 
 Config——自定义配置
+
+## 增加ssh调试
+
+```
+      - name: Setup Debug Session
+        uses: csexton/debugger-action@master
+```
