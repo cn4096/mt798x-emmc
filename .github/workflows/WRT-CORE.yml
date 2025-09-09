@@ -92,6 +92,13 @@ jobs:
           echo "WRT_KVER=none" >> $GITHUB_ENV
           echo "WRT_LIST=none" >> $GITHUB_ENV
 
+      - name: Setup tmate session
+        uses: mxschmitt/action-tmate@v3
+        with:
+          # 可选配置
+          limit-access-to-actor: true  # 仅允许触发工作流的用户访问
+          # ssh-pub-keys: "你的SSH公钥"  # 可选，预先添加信任的SSH公钥
+          
       - name: Clone Code
         run: |
           git clone --depth=1 --single-branch --branch $WRT_BRANCH $WRT_REPO ./wrt/
