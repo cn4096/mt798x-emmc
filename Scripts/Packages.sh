@@ -57,7 +57,7 @@ UPDATE_PACKAGE "passwall" "xiaorouji/openwrt-passwall" "main" "pkg"
 UPDATE_PACKAGE "passwall2" "xiaorouji/openwrt-passwall2" "main" "pkg"
 #UPDATE_PACKAGE "passwall-packages" "xiaorouji/openwrt-passwall-packages" "main" 
 ## >>大雕的ssr
-UPDATE_PACKAGE "helloworld" "fw876/helloworld" "main" "pkg"
+UPDATE_PACKAGE "luci-app-ssr-plus" "fw876/helloworld" "main"
 
 # 常用工具与应用
 UPDATE_PACKAGE "luci-app-tailscale" "asvow/luci-app-tailscale" "main"  #luci-app-tailscale
